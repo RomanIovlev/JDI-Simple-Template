@@ -11,6 +11,7 @@ public class SimpleTestsInit extends TestNGBase {
     @BeforeSuite(alwaysRun = true)
     public static void setUp() {
         WebSite.init(JDIExampleSite.class);
+        JDIExampleSite.open();
         logger.info("Run Tests");
     }
 }
